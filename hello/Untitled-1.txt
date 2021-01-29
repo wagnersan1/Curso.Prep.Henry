@@ -1,0 +1,48 @@
+a || b:
+
+// tabla de la verdad
+T || T = T 
+T || F = T 
+F || T = T 
+F || F = F 
+
+si "a" es True => a
+si "a" es false => b 
+"toni" || false:
+
+
+var obj = {
+    edad = 22,
+    getEdad: function (){
+        return this.edad;
+    }
+}
+var obj2 = {
+    edad = 72,
+    getEdad: function (){
+        return this.edad;
+    }
+}
+var obj3 = {
+    edad = 60,
+    getEdad: function (){
+        return this.edad;
+    }
+}
+
+
+
+function Persona(edad){
+    this.edad = edad;
+}
+//Persona.prototype.getEdad = function (){
+    return this.edad;
+}
+//Persona.prototype.getEdad = function (){
+    return "tiene:"+ this.edad + "anios";
+}
+
+var obj = new Persona(22);
+var obj2 = new Persona(40);
+var obj3 = new Persona(72);
+   
